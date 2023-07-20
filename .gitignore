@@ -1,3 +1,4 @@
 .env
 .idea
 postgres_data/
+db.sqlite3
