@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-h8+mly*79*f7od9l9kva^zn1a&vc#1t1@ufta6!kicbjk5in+0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#Разрешить подключение с сетевого адреса
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'main',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
