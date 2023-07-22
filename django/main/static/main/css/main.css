@@ -1,0 +1,47 @@
+
+body {
+    background: darkcyan;
+}
+
+aside {
+    float: left;
+    background: black;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: beige;
+    border-right: 5px solid brown;
+}
+
+aside img {
+    float: left;
+
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 90px;
+}
+
+aside h3 {
+    margin-top: 50px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li{
+    display: block;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: right;
+}
+
