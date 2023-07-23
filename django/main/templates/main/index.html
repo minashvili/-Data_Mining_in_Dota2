@@ -1,11 +1,25 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Главная страница</h1>
+        <h1>{{ title }}</h1>
         <p>Какой-нибудь текст</p>
         <button class="btn btn-warning">Выключить сервер прод</button>
+        {{ values }}
+        {% for word in values %}
+            <p>{{ word }}</p>
+        {% endfor %}
+
+        {% for word2 in outer_key1 %}
+            {% if word2 == 'inner_key1' %}
+                {% filter upper %}
+                <p>{{ word2 }}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+
+
     </div>
 {% endblock %}
