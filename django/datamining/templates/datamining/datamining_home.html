@@ -1,12 +1,17 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}{{ title }}{% endblock %}
+{% block title %}TEST{% endblock %}
 
 {% block content %}
-    <div class="features">
-        <h1>{{ title }}</h1>
+    <div class="features2">
+<!--        <h1>{{ title }}</h1>-->
         <p>Текст о данных из API DOTA</p>
-    </div>
 
+        {% for x in all_servises %}
+            <div class="alert alert-warning">
+                <h10>{{ x }}</h10>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
 

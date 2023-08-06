@@ -20,3 +20,10 @@ class ServisesInSupport(models.Model):
     def __str__(self):
         return self.name
 
+class TableForForm(models.Model):
+    name = models.CharField('Название Предмета', max_length=100)
+    hero_name = models.CharField('Имя Героя', max_length=100)
+
+    def __str__(self):
+        return self.name
+

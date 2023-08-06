@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Запрос Данных{% endblock %}
+
+{% block content %}
+    <div class="features2">
+        <h1>Запрос данных</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Название предмета" class="from-control"><br>
+            <input type="text" placeholder="Имя Героя" class="from-control"><br>
+            <button class="btn btn-success" type="submit"> Отправить запрос в БД</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+

@@ -14,18 +14,18 @@
 
 <body>
     <aside>
-        <img src="{% static 'main/img/image_konfusi.png'%}" alt="Мудрость">
-        <span class="logo">Logotip</span>
+<!--        <img src="{% static 'main/img/image_konfusi.png'%}" alt="Мудрость">-->
+<!--        <span class="logo">Logotip</span>-->
         <h3>Навигация</h3>
         <ul>
             <a href="{% url 'home' %}"><li>Главная</li></a>
             <a href="{% url 'test' %}"><li>Про Test</li></a>
             <a href="{% url 'datamining_home' %}"><li>Data</li></a>
+            <a href="{% url 'simple_form' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Запрос Данных</button></li></a>
         </ul>
     </aside>
     <main>
             {% block content %}{% endblock %}
     </main>
 </body>
-
 </html>

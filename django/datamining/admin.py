@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Dota_item_name
 from .models import ServisesInSupport
+from .models import TableForForm
+
 # Register your models here.
 
 @admin.register(ServisesInSupport)
@@ -9,7 +11,7 @@ class ServisesInSupportAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Dota_item_name)
-#admin.site.register(ServisesInSupport)
+admin.site.register(TableForForm)
 
 
 
