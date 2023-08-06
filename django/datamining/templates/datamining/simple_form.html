@@ -7,8 +7,11 @@
         <h1>Запрос данных</h1>
         <form method="post">
             {% csrf_token %}
-            <input type="text" placeholder="Название предмета" class="from-control"><br>
-            <input type="text" placeholder="Имя Героя" class="from-control"><br>
+            {{ form.name }}
+            {{ form.hero_name }}
+<!--            <input type="text" placeholder="Название предмета" class="from-control"><br>-->
+<!--            <input type="text" placeholder="Имя Героя" class="from-control"><br>-->
+            <span>{{ error }}</span>
             <button class="btn btn-success" type="submit"> Отправить запрос в БД</button>
         </form>
     </div>
