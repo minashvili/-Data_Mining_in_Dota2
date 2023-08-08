@@ -9,7 +9,8 @@
 
         {% for x in all_servises %}
             <div class="alert alert-warning">
-                <h10>{{ x }}</h10>
+                <h10>{{ x }}</h10><br>
+                <a href="{% url 'dynamic_services' x.id %}" class="btn btn-warning">Подробно о сервисе</a>
             </div>
         {% endfor %}
     </div>
