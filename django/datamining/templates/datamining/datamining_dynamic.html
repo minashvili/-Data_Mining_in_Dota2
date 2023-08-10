@@ -6,7 +6,8 @@
     <div class="features2">
         <h1>{{ servisesinsupport.name }}</h1>
         <p>{{ servisesinsupport.guid_server }}</p>
-
+        <a href="{% url 'services_delete' servisesinsupport.id %}" class="btn btn-danger">Удалить Запись</a>
+        <a href="{% url 'services_update' servisesinsupport.id %}" class="btn btn-info">Редактировать Запись</a>
     </div>
 {% endblock %}
 

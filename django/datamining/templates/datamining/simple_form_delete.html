@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Удаление Данных{% endblock %}
+
+{% block content %}
+    <div class="features2">
+        <h1>Удаление Данных</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit"> Удаление Данных из БД</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+
+

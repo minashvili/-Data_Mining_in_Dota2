@@ -17,12 +17,18 @@ class ServisesInSupport(models.Model):
     discription = models.TextField('Дополнительная информация, документация')
     ip_adreses = models.TextField('Айпи адреса серверов', default='')
 
+    def get_absolute_url(self):
+        return f'/datamimig/{self.id}'
+
     def __str__(self):
         return self.name
 
 class TableForForm(models.Model):
     name = models.CharField('Название Предмета', max_length=100)
     hero_name = models.CharField('Имя Героя', max_length=100)
+
+    # def get_absolute_url(self):
+    #     return f'/datamimig/{self.id}'
 
     def __str__(self):
         return self.name

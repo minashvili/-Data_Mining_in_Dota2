@@ -8,7 +8,10 @@
         <form method="post">
             {% csrf_token %}
             {{ form.name }}
-            {{ form.hero_name }}
+            {{ form.guid_server }}
+            {{ form.appearance_time }}
+            {{ form.discription }}
+            {{ form.ip_adreses }}
 <!--            <input type="text" placeholder="Название предмета" class="from-control"><br>-->
 <!--            <input type="text" placeholder="Имя Героя" class="from-control"><br>-->
             <span>{{ error }}</span>
